@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Inan Brunelli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="ChangeFont();">
+    <nav id="header">
+        <ul>
+            <li id="li-dark1"><i class="fas fa-shekel-sign"></i> inanbrunelli</li>
+            <li id="li-dark2" class="change-language" onclick="Scroll(1)">About</li>
+            <li id="li-dark3" class="change-language" onclick="Scroll(2)">Skills</li>
+            <li id="li-dark4" class="change-language" onclick="Scroll(3)">Projects</li>
+            <li id="li-dark5" class="change-language" onclick="Scroll(4)">Contact</li>
+            <li id="darkmode" class="change-language" onmouseover="MouseDark(1);" onmouseout="MouseDark(2);"
+                onclick="DarkMode();">
+                <i class="far fa-moon"></i>
+                Dark Mode
+            </li>
+
+            <li class="language">
+                <div id="idm-en" onclick="language();" onmouseover="mouseLanguage(1, this);" onmouseout="mouseLanguage(2, this);">En</div>
+                <div id="idm-pt" onclick="language();" onmouseover="mouseLanguage(1, this);" onmouseout="mouseLanguage(2, this);">Pt</div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <section class="section-about">
+        <div class="row">
+            <div class="intro col-6">
+                <h6 id="welcome" class="change-language">Welcome to my portifolio website.</h6>
+                <h3 id="folks" class="change-language">Hey folks, I'm <b id="change-font">Inan Brunelli</b></h3>
+                <h6 id="build" class="change-language">Building a sucessful product is a challenge. I am highly
+                    energetic in user experience design, interfaces and web development.</h6>
+            </div>
+            <div class="img-intro col-6">
+                <img src="imagens/svg/svg1.svg" alt="" id="imgsvg">
+            </div>
+        </div>
+
+        <div class="row" id="row-700">
+            <div id="me-img"></div>
+            <div id="me-text">
+                <h3 id="who" class="change-language">Who's this guy?</h3>
+                <h6 id="front-text" class="change-language">
+                    I'm a Front-End/Back-End Developer for CRG Gestão in Americana-São Paulo, Brazil.<br>
+                    I have serious passion for UI effects, minimalist design and creating intuitive, dynamic user
+                    experiences.<br>
+                    I'm only 2 years into web development, but I program for 4 years.<br>
+                    I was a programer in delphi software, but then I fall in love with web development and start to make
+                    that
+                    as my main career.<br>
+                    <a onclick="Scroll(4);">Let's make something special.</a>
+                </h6>
+
+                <button class="btn-resume change-language" id="btn-resume" onclick="downloadResume();">Download resume
+                    <i class="fas fa-save"></i>
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills">
+        <h2 id="skills-title1" class="change-language">Skills</h2>
+        <h2 id="skills-title2" class="change-language">More Skills</h2>
+
+        <div class="skill-column1">
+            <div class="skill-circle" id="cicle-1" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-html" src="imagens/icons/html_white.png" />
+                <h1 class="skill-maintitle">HTML</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-html">Assim como CSS, aprendi HTML de forma
+                    autônoma, utilizando
+                    ambos no meu
+                    dia-a-dia de trabalho atualmente.</h1>
+            </div>
+            <div class="skill-line"></div>
+            <div class="skill-circle" id="cicle-2" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-css" src="imagens/icons/css_white.png" />
+                <h1 class="skill-maintitle">CSS</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-css">Trabalho com CSS há 2 anos, onde tenho pleno
+                    domínio da
+                    linguagem,
+                    podendo desenvolver projetos completos de forma responsiva. Também tenho conhecimento e experiência
+                    em Bootstrap.</h1>
+            </div>
+            <div class="skill-line"></div>
+            <div class="skill-circle" id="cicle-3" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-js" src="imagens/icons/javascript_white.png" />
+                <h1 class="skill-maintitle">JAVASCRIPT</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-js">Possuo conhecimento abrangente em JavaScript,
+                    desde a manipulação do
+                    front-end, quanto o tratamento de dados no back-end.</h1>
+            </div>
+            <div class="skill-line"></div>
+            <div class="skill-circle" id="cicle-4" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-pg" src="imagens/icons/postgres_white.png" />
+                <h1 class="skill-maintitle">POSTGRES</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-pg">Tenho 3 anos de experiência com o postgres,
+                    lidando diáriamente com um
+                    banco de dados que atende 20 supermercados, onde faço upgrades e tratamento de dados.</h1>
+            </div>
+        </div>
+
+        <div class="skill-column2">
+            <div class="skill-circle" id="cicle-5" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-ps" src="imagens/icons/photoshop_white.png" />
+                <h1 class="skill-maintitle">PHOTOSHOP</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-ps">Tive uma experiência profissional utilizando o
+                    photoshop por 2
+                    anos, onde executava tratamentos e montagens de imagens.</h1>
+            </div>
+            <div class="skill-line"></div>
+            <div class="skill-circle" id="cicle-6" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-il" src="imagens/icons/illustrator_white.png" />
+                <h1 class="skill-maintitle">ILLUSTRATOR</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-il">Já fiz alguns trabalhos de ilustrações
+                    utilizando Illustrator. Também
+                    utilizo está ferramenta pra desenvolver ou modificar alguma arte/ilutração para meus projetos
+                    pessoais.
+                </h1>
+            </div>
+            <div class="skill-line"></div>
+            <div class="skill-circle" id="cicle-7" onmouseover="SkillHover(1,this);" onmouseout="SkillHover(2,this);">
+                <img id="img-git" src="imagens/icons/git_white.png" />
+                <h1 class="skill-maintitle">GITHUB</h1>
+                <h1 class="skill-secondtitle change-language" id="lg-git">Utilizo diáriamente o github para gerenciar
+                    versões,
+                    tanto em projetos pessoais como profissionais.</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <h2 class="title-project change-language" id="proje">projects</h2>
+        <div class="title-project-line" id="tlp"></div>
+        
+        <div class="flex-slider">
+            <div class="row-flex">
+                <div class="item-flex2" id="pj1" onclick="ViewProject(1)"></div>
+                <div class="item-flex2" id="pj2" onclick="ViewProject(2)"></div>
+            </div>
+            <div class="row-flex">
+                <div class="item-flex2" id="pj3" onclick="ViewProject(4)"></div>
+                <div class="item-flex2" id="pj4" onclick="ViewProject(3)"></div>
+            </div>
+            <div class="row-flex">
+                <div class="item-flex1" id="pj5" onclick="ViewProject(5)"></div>
+            </div>                        
+        </div>
+        
+
+        <div class="dots">
+            <div class="dot" id="dot1"></div>
+            <div class="dot" id="dot2"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
+            <div class="dot" id="dot5"></div>
+        </div>
+    </section>
+
+    <div class="block"></div>
+
+    <section class="contact">        
+        <h2 class="title-contact change-language" id="tc">contact</h2>
+        <div class="title-contact-line" id="tcl"></div>        
+        <h3 class="title-question change-language" id="question">Have a question or want to work together?</h3>
+
+        <div class="div-form">
+            <input class="input change-language" type="text" placeholder="Name" id="name">
+            <input class="input change-language" type="text" placeholder="Email" id="email">
+            <textarea class="input change-language" name="message" id="message" cols="30" rows="5"
+                placeholder="Your Message"></textarea>
+
+            <button id="btn-send" class="change-language" onmouseover="hoverSend(1);"
+                onmouseout="hoverSend(2);">Submit</button>
+        </div>
+
+        <div id="main-footer">
+            <div class="icon-central" onclick="Scroll(1);"><i class="fas fa-angle-double-up"></i></div>
+            <div class="flex-icon">
+                <div class="contact-icon" onclick="socialLink(1);"><i class="fab fa-facebook-f"></i></div>
+                <div class="contact-icon" onclick="socialLink(2);"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-icon" onclick="socialLink(3);"><i class="fab fa-instagram"></i></div>
+                <div class="contact-icon" onclick="socialLink(4);"><i class="fab fa-github"></i></div>
+            </div>
+            <h3 class="text-footer">INAN BRUNELLI <b>©2021</b></h3>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>

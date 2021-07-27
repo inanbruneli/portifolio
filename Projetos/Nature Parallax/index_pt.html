@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Pessoas na natureza</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;800&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">        
+        <link rel="stylesheet" href="css/css.css">     
+        
+
+        
+        <script>            
+            function CarregarTela(){
+
+              document.querySelector('body').addEventListener('keydown', function(event){
+                var tecla = event.keyCode;
+                if(tecla == 27) {  
+                    document.getElementById('abrirModal').style.opacity = "0";         
+                    document.getElementById('abrirModal').style.pointerEvents = "none";
+                }
+              });                
+            }
+            
+            function OpenModal(){
+                document.getElementById('abrirModal').style.opacity = "1";
+                //document.getElementById('abrirModal').style.pointerEvents = "auto";                
+            }            
+            
+            function IconsMove(cod,acao){                                
+                if (acao == 1){
+                    if (cod == 1){                               
+                        
+                        document.getElementById('Icon2').style.color = "#b2b2b2";
+                        document.getElementById('Icon3').style.color = "#b2b2b2";
+                        document.getElementById('Icon4').style.color = "#b2b2b2";                            
+                    }
+                    else if (cod == 2){
+                        document.getElementById('Icon1').style.color = "#b2b2b2";
+                        document.getElementById('Icon3').style.color = "#b2b2b2";
+                        document.getElementById('Icon4').style.color = "#b2b2b2";                            
+                    }
+                    else if (cod == 3){
+                        document.getElementById('Icon1').style.color = "#b2b2b2";
+                        document.getElementById('Icon2').style.color = "#b2b2b2";
+                        document.getElementById('Icon4').style.color = "#b2b2b2";                            
+                    }
+                    else if (cod == 4){
+                        document.getElementById('Icon1').style.color = "#b2b2b2";
+                        document.getElementById('Icon2').style.color = "#b2b2b2";
+                        document.getElementById('Icon3').style.color = "#b2b2b2";                            
+                    }
+                }
+                else{
+                    document.getElementById('Icon1').style.color = "white";
+                    document.getElementById('Icon2').style.color = "white";
+                    document.getElementById('Icon3').style.color = "white";                          
+                    document.getElementById('Icon4').style.color = "white";                          
+                }
+            }
+            
+        </script>
+    </head>
+    <body onload="CarregarTela();">
+        
+        
+        <section class="main-section">
+            
+            <h1 class="myname">inan brunelli</h1>
+            
+            <header>
+                <div class="navbar">
+                  <div class="dropdown">
+                    <button class="dropbtn">Sobre
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" class="a-hover">Sobre Inan</a>
+                      <a href="#" class="a-hover">Portifólio</a>                      
+                    </div>
+                  </div>
+                    
+                  <div class="dropdown">
+                    <button class="dropbtn">Fotografia
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" class="a-hover">Favoritas</a>
+                      <a href="#" class="a-hover">Pessoas na natureza</a>                      
+                      <a href="#" class="a-hover">Natureza</a>                      
+                    </div>
+                  </div>
+                    
+                  <a href="#" class="a-hover">Serviços</a>
+                    
+                  <a href="#" class="navcontato">Contato</a>
+                    
+            <div class="headericons">
+              <a href="#" class="icons" id='Icon1' onmouseenter='IconsMove(1,1);' onmouseleave='IconsMove(1,2);'><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="icons" id='Icon2' onmouseenter='IconsMove(2,1);' onmouseleave='IconsMove(1,2);'><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icons" id='Icon3' onmouseenter='IconsMove(3,1);' onmouseleave='IconsMove(1,2);'><i class="fab fa-twitter"></i></a>
+              <a href="#" class="icons" id='Icon4' onmouseenter='IconsMove(4,1);' onmouseleave='IconsMove(1,2);'><i class="fab fa-linkedin-in"></i></a>
+            </div>                     
+                    
+                </div>
+            </header>
+           
+            <div  class="maintext">
+                <h1>PESSOAS NA NATUREZA</h1>    
+            </div>
+        </section>
+        
+        
+        <section class="section-fotos">
+            <!--<a href="#abrirModal" onclick='OpenModal():'><img class="imgleft" src='imagens/cardimg1.jpg'></a>-->
+            
+            <a href="#" class="link-image"><img class="imgleft" src='imagens/cardimg1.jpg'></a>
+            
+            <a href="#"><img class="imgmid" src='imagens/cardimg2.jpg'></a>
+            
+            <a href="#"><img class="imgmid" src='imagens/cardimg3.jpg'></a>
+            
+            <a href="#"><img class="imgright" src='imagens/cardimg4.jpg'></a>
+            
+            <a href="#"><img class="imgmid" src='imagens/cardimg5.jpg'></a>
+            
+            <a href="#"><img class="imgmid2" src='imagens/cardimg6.jpg'></a>
+            
+            <a href="#"><img class="imgmid2" src='imagens/cardimg7.jpg'></a>
+            
+            <a href="#"><img class="imgmid" src='imagens/cardimg8.jpg'></a>
+        </section>
+        
+        <footer>
+            <a href="#">Sobre</a>
+            <a href="#">Blog</a>
+            <a href="#">Serviços</a>
+            <a href="#">Print</a>
+            <a href="#">Contato</a>
+            <p>Inan Brunelli | Todos os direitos reservados 2021</p>
+        </footer>
+        
+        <div id="abrirModal" class="modal">          
+          <img class="imgmodal" src='imagens/cardimg1.jpg'>            
+        </div>
+        
+        
+    </body>
+</html>

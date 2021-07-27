@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/font/Helvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    box-sizing: border-box;    
+}
+
+.mainsection {    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;    
+    background-image: linear-gradient(to top left, rgba(22, 22, 24, 1) 0%, rgba(49, 49, 50, 1) 100%);    
+}
+
+.left-logo{
+    height: 100%;
+    width: 6%;
+    border-right: 1px solid #707070;
+    display: inline-block;
+}
+
+.logo {    
+    color: white;
+    font-size: 35px;    
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.navegate{
+    display: inline-block;
+    list-style: none;    
+    width: 93%;    
+    text-align: right;
+    padding-right: 20vw;
+}
+
+.navegate li{
+    display: inline-block;
+    margin-left: 3%;
+    font-weight: bold;    
+}
+
+.navegate li a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 10% 1vw;
+    transition: all .4s ease-in-out;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+}
+
+.navegate a:hover {
+    color: #ef6262;
+    border-bottom: 2px solid #ef6262;
+}
+
+.collection {    
+    color: white;        
+    font-size: 12px;
+    letter-spacing: 2px;    
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.line-01 {
+    width: 200px;
+    height: 10px;
+    border-bottom: 1px solid #707070;
+}
+
+.line-02 {
+    width: 100px;
+    height: 0;
+    border-bottom: 1px solid #ef6262;
+    transition: all .3s cubic-bezier(0, .99, .62, .9);
+}
+
+.collection h1:nth-child(4) {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.collection h1:nth-child(5),
+.collection h1:nth-child(6) {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #606060;
+}
+
+.blur {    
+    border-bottom: 2px solid #707070;
+    border-top: 2px solid #707070;    
+    width: 20%;    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23vh;
+}
+
+
+#work,
+#travel,
+#active {
+    transition: all .2s;
+}
+
+.event{
+    display: inline-block;
+    padding-left: 7%;    
+    width: 60%;
+    height: 100%;
+}
+
+.title-event {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+    margin: 2% 4%;
+}
+
+.event-line{
+    padding-left: 3.5%;
+    display: flex;
+    width: 80%;    
+    justify-content: space-between;    
+    margin-bottom: 1%;
+}
+
+.event-grey {
+    color: #A1A1A1;
+    font-size: 13px;    
+    letter-spacing: 2px;
+    transition: all 1s;    
+}
+
+.event-white {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 1s;
+}
+
+.event-line h1{
+    width: 60%;
+}
+
+.pointers{    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3%;
+}
+
+#point1{
+    background: #ef6262;    
+}
+
+.point {
+    width: 8px;
+    height: 8px;
+    border-radius: 40%;    
+    transition: all 1s;
+    background: #646464;
+}
+
+.news{
+    width: 30%;
+    display: inline-block;
+    height: 70%;    
+}
+
+.news h1 {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+    margin: 2% 0 3% 0%;
+}
+
+.fresh {    
+    color: #A1A1A1;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 2.2px;
+    line-height: 1.5;
+}
+
+.background{    
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    background-image: url(../images/masc1.png);
+    background-size: 100% 100%;    
+    background-position: bottom;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 15%;
+    border: 2px solid red;
+}
+

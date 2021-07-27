@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Baloo";
+  src: url(../fonte/Baloo.ttf);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #b9b6b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Baloo";
+}
+
+.myname {
+  position: absolute;
+  display: flex;
+  padding: 2.2rem 2rem;
+  justify-content: space-between;
+}
+
+header {
+  float: right;
+}
+
+.navbarcs a,
+.navbarcs button,
+.dropdowncs {
+  margin: 20px 20px;
+}
+
+.navbarcs a,
+.navbarcs button {
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.navbarcs a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.dropdowncs {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdowncs .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.a-hover:hover,
+.dropdowncs:hover .dropbtn,
+.footercs a:hover {
+  color: #fc8c37;
+}
+
+.a-hover,
+.dropdowncs,
+.navcontato,
+.dropdown-content a,
+.dropdown-content,
+.dropbtn {
+  transition: all 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdowncs:hover .dropdown-content {
+  display: block;
+}
+
+.navcontato {
+  border: 2px solid white;
+}
+
+.navcontato:hover {
+  background-color: white;
+  color: #ff6f00;
+}
+
+.icons i {
+  margin-left: -15px;
+}
+
+.icons,
+.icons i,
+.footercs a {
+  transition: all 0.3s;
+}
+
+.headericons {
+  float: right;
+  margin-right: 10px;
+}
+.headericons a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.footercs {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: rgb(24, 24, 24);
+}
+
+.footercs a {
+  text-decoration: none;
+  margin-left: 50px;
+  margin-top: 1vh;
+  color: white;
+}
+
+.footercs p {
+  font-size: 0.8rem;
+  margin-top: 0.5vh;
+}
+
+.main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
+
+.containercs {
+  height: 100vh;
+}
+
+.containercs img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contentcs {
+  width: 100%;
+  background: rgb(24, 24, 24);
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.content-images {
+  margin-top: 0.1vh;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.content-images img {
+  margin: 10px;
+}
+
+.content-images img:hover {
+  cursor: pointer;
+}
+
+.content-images img:nth-child(2),
+.content-images img:nth-child(3),
+.content-images img:nth-child(5),
+.content-images img:nth-child(8) {
+  align-self: flex-start;
+}
+
+.content-images img:nth-child(6),
+.content-images img:nth-child(7) {
+  margin-top: -22vh;
+}
+
+.vertical-image {
+  width: 80vw !important;
+  height: 80vh !important;
+  border: 2px solid blue;
+  object-fit: cover;
+}
+
+.horizontal-image {
+  width: 80vw !important;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.menu,
+.finalbtn {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu {
+    display: block;
+    width: 80vw;
+  }
+
+  .headericons a {
+    position: absolute;
+    right: 0%;
+  }
+
+  .headericons a:nth-child(1) {
+    top: 0%;
+  }
+
+  .headericons a:nth-child(2) {
+    top: 5%;
+  }
+
+  .headericons a:nth-child(3) {
+    top: 10%;
+  }
+
+  .headericons a:nth-child(4) {
+    top: 15%;
+  }
+
+  .navbarcs a,
+  .navbarcs button,
+  .dropdowncs {
+    margin: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .menu {
+    display: block;
+    width: 90vw;
+  }
+
+  .headericons a {
+    position: absolute;
+    right: 0%;
+  }
+
+  .headericons a:nth-child(1) {
+    top: 0%;
+  }
+
+  .headericons a:nth-child(2) {
+    top: 5%;
+  }
+
+  .headericons a:nth-child(3) {
+    top: 10%;
+  }
+
+  .headericons a:nth-child(4) {
+    top: 15%;
+  }
+
+  .navbarcs a,
+  .navbarcs button,
+  .dropdowncs {
+    margin: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    display: block;
+    width: 90vw;
+  }
+
+  .headericons a {
+    position: absolute;
+    right: 0%;
+  }
+
+  .headericons a:nth-child(1) {
+    top: 0%;
+  }
+
+  .headericons a:nth-child(2) {
+    top: 5%;
+  }
+
+  .headericons a:nth-child(3) {
+    top: 10%;
+  }
+
+  .headericons a:nth-child(4) {
+    top: 15%;
+  }
+
+  .navbarcs a,
+  .navbarcs button,
+  .dropdowncs {
+    margin: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .myname {
+    display: none;
+  }
+
+  .content-images img:nth-child(1),
+  .content-images img:nth-child(2),
+  .content-images img:nth-child(3),
+  .content-images img:nth-child(4),
+  .content-images img:nth-child(5),
+  .content-images img:nth-child(6),
+  .content-images img:nth-child(7),
+  .content-images img:nth-child(8) {
+    order: 0;
+  }
+
+  .content-images img:nth-child(6) {
+    margin-top: 5vw;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .content-images img:nth-child(1),
+  .content-images img:nth-child(2),
+  .content-images img:nth-child(3),
+  .content-images img:nth-child(6),
+  .content-images img:nth-child(7),
+  .content-images img:nth-child(8) {
+    order: 0;
+  }
+
+  .content-images img:nth-child(4) {
+    order: -2;
+  }
+
+  .content-images img:nth-child(6) {
+    order: -1;
+  }
+
+  .content-images img:nth-child(7) {
+    order: -2;
+  }
+
+  .content-images img:nth-child(7),
+  .content-images img:nth-child(8) {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .content-images img:nth-child(1) {
+    order: 0;
+  }
+
+  .content-images img:nth-child(4) {
+    order: -1;
+  }
+
+  .content-images img:nth-child(6) {
+    order: -2;
+  }
+
+  .content-images img:nth-child(7),
+  .content-images img:nth-child(8) {
+    display: none;
+  }
+}
