@@ -1,6 +1,9 @@
 dark = 'off';
 
 function ChangeFont() {
+    alert(screen.width);
+    alert(screen.height);
+
     cod = 1;
     lg = 1;
     Interval();
